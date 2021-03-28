@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<entity path="">
+		<state id="idle">
+		<mesh_ref ref="mesh"/>
+		<bsphere value="512, -10, 697, 1074"/>
+		<box min="-305, -462, 0" max="1329, 442, 1395"/>
+	</state>
+	<mesh_description id="mesh">
+		<mesh file="SolarPanelBig_mesh.hgm"/>
+		<material file="SolarPanelBig_mesh.mtl"/>
+
+		<attach name="Origin" spot_pos = "0,0,0"/>
+		<attach name="Center" spot_pos="5, 578, 0"/>
+		<attach name="Top" spot_pos="5, 578, 1900" spot_rot="0.0, 0.0, -0.7, 270"/>
+
+		<attach name="Autolight" spot_note="color:cool,radius:4,intensity:50,important" spot_pos="5, 578, 402"/>
+		<attach name="Light" spot_pos="5, 578, 402"/>
+
+		<attach name="AutoAttach" spot_note="att,RechargeStationPlatform,show" spot_pos = "500,866,8" spot_rot="0.0,0.0,1.0,0"/>
+		<attach name="AutoAttach" spot_note="att,RechargeStationPlatform,show" spot_pos = "-500,866,8" spot_rot="0.0,0.0,1.0,180"/>
+		<attach name="AutoAttach" spot_note="att,RechargeStationPlatform,show" spot_pos = "0,0,8" spot_rot="0.0,0.0,1.0,-90"/>
+
+		<attach name="AutoAttach" spot_note="att,InvisibleObject,show" spot_pos = "0,0,0"/>
+		
+		<attach name="Door" spot_note="openInside=1,openOutside=2,chain=1,waypoint=1" spot_pos="5, 578, -25"/>
+		<attach name="Door" spot_note="chain=1,waypoint=2" spot_pos="5, 1632, 4"/>
+		
+		<attach name="Workdrone" spot_pos="-205, -199, 0" spot_rot="0.0, 0.0, 0.46, 55"/>
+		<attach name="Workdrone" spot_pos="955, 1052, 0" spot_rot="0.0, 0.0, 1.0, 180"/>
+		<attach name="Workdrone" spot_pos="-652, 1398, 0" spot_rot="0.0, 0.0, -0.46, 305"/>
+
+		<attach name="Workrover" spot_pos="-48, 1740, 0" spot_rot="0.0, 0.0, -0.69, 271"/>
+		<attach name="Workrover" spot_pos="1028, -58, 0" spot_rot="0.0, 0.0, 0.95, 144"/>
+		<attach name="Workrover" spot_pos="-983, -18, 0" spot_rot="0.0, 0.0, 0.28, 32"/>
+
+		<surf type="hex_shape" points="671, 923, 0;-9, -252, 0;-610, 923, 0"/>
+
+		<surf type="selection" points="1000, 866, 0;-2, 866, 0;750, 1299, 0"/>
+		<surf type="selection" points="1000, 866, 0;250, -433, 0;-2, 866, 0"/>
+		<surf type="selection" points="250, -433, 0;-250, -433, 0;-2, 866, 0"/>
+		<surf type="selection" points="-250, -433, 0;-1000, 866, 0;-2, 866, 0"/>
+		<surf type="selection" points="-2, 866, 0;-750, 1299, 0;750, 1299, 0"/>
+		<surf type="selection" points="-2, 866, 0;-1000, 866, 0;-750, 1299, 0"/>
+
+		<surf type="collision" points="183, -160, 8;-178, -160, 8;-178, -160, 656"/>
+		<surf type="collision" points="-720, 778, 656;-178, -160, 656;-178, -160, 8"/>
+		<surf type="collision" points="-178, -160, 8;-720, 778, 8;-720, 778, 656"/>
+		<surf type="collision" points="727, 782, 104;-179, -159, 104;-722, 782, 104"/>
+		<surf type="collision" points="724, 778, 656;-178, -160, 656;-720, 778, 656"/>
+		<surf type="collision" points="-720, 778, 8;-539, 1091, 8;-539, 1091, 656"/>
+		<surf type="collision" points="-539, 1091, 656;-720, 778, 656;-720, 778, 8"/>
+		<surf type="collision" points="-722, 782, 104;-541, 1096, 104;545, 1096, 104"/>
+		<surf type="collision" points="-720, 778, 656;-539, 1091, 656;544, 1091, 656"/>
+		<surf type="collision" points="544, 1091, 656;-539, 1091, 656;-539, 1091, 8"/>
+		<surf type="collision" points="-178, -160, 656;183, -160, 656;183, -160, 8"/>
+		<surf type="collision" points="727, 782, 104;183, -159, 104;-179, -159, 104"/>
+		<surf type="collision" points="724, 778, 656;183, -160, 656;-178, -160, 656"/>
+		<surf type="collision" points="724, 778, 8;183, -160, 8;183, -160, 656"/>
+		<surf type="collision" points="183, -160, 656;724, 778, 656;724, 778, 8"/>
+		<surf type="collision" points="727, 782, 104;-722, 782, 104;545, 1096, 104"/>
+		<surf type="collision" points="724, 778, 656;-720, 778, 656;544, 1091, 656"/>
+		<surf type="collision" points="-539, 1091, 8;544, 1091, 8;544, 1091, 656"/>
+		<surf type="collision" points="544, 1091, 8;724, 778, 8;724, 778, 656"/>
+		<surf type="collision" points="724, 778, 656;544, 1091, 656;544, 1091, 8"/>
+
+		</mesh_description>
+</entity>
